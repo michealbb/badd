@@ -1,5 +1,6 @@
 import "dotenv/config";
 import app from "./api/server.js";
+import { SERVER_PORT } from "./api/services/helpers/environment.js";
 
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => console.log(`Listening on port ${PORT}...`));
+
+app.listen(SERVER_PORT, () => console.log(`Listening on port ${SERVER_PORT}...`));
