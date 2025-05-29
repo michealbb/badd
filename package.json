@@ -42,13 +42,16 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test:api": "jest --testPathPattern=api/tests/ --detect-open-handles --verbose",
-    "eject": "react-scripts eject"
+  "start": "node server.js",
+  "client": "react-scripts start",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "test:api": "jest --testPathPattern=api/tests/ --detect-open-handles --verbose",
+  "eject": "react-scripts eject"
+}
+
   },
   "eslintConfig": {
     "extends": [
